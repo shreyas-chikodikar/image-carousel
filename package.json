@@ -1,0 +1,14 @@
+{
+    "name": "lit-image-carousel",
+    "version": "1.0.0",
+    "description": "A standalone Lit-based image carousel component",
+    "main": "index.html",
+    "scripts": {
+      "start": "lite-server"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "lite-server": "^2.6.1"
+    }
+}

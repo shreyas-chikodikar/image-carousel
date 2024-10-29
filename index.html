@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <script type="module" src="./image-carousel.js"></script>
+    <!-- Link to your Lit element -->
+  </head>
+
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+      font-size: 10px;
+    }
+
+    @media only screen and (min-width: 3000px) {
+      html {
+        font-size: 30px;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      html {
+        font-size: 8px;
+      }
+    }
+    body {
+      display: flex;
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+    }
+    #ctr {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      padding: 50px;
+    }
+
+    image-carousel {
+      --carousel-button-size: 3rem; /* Custom CSS Property */
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+
+  <body>
+    <div id="ctr">
+      <!-- Your custom element -->
+      <image-carousel auto-play interval="5000"></image-carousel>
+    </div>
+
+    <script>
+      // Placeholder images
+      document.querySelector("image-carousel").images = [
+        "https://via.placeholder.com/600x300?text=Image+1",
+        "https://via.placeholder.com/600x300?text=Image+2",
+        "https://via.placeholder.com/600x300?text=Image+3",
+      ];
+    </script>
+  </body>
+</html>
